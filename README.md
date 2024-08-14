@@ -1,4 +1,4 @@
-# Atividades - Técnico em Desenvolvimento de Sistemas (SENAC)
+# Atividades da UC6 - Técnico em Desenvolvimento de Sistemas (SENAC)
 
 Este repositório contém códigos de 4 atividades desenvolvidas ao longo do curso Técnico em Desenvolvimento de Sistemas no SENAC. As atividades foram implementadas utilizando a linguagem Java, abordando diversos conceitos fundamentais da programação orientada a objetos.
 
