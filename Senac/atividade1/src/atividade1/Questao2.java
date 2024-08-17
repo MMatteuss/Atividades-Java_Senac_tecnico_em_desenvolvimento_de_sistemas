@@ -23,19 +23,33 @@ public class Questao2 {
         int idadeCliente1;
         int idadeCliente2;
         
-        System.out.println("Qual o nome do primeiro Cliente: ");
+        System.out.print("Qual o nome do primeiro Cliente: ");
         nomeCliente1 = leia.nextLine();
-        System.out.println("Qual a idade do "+nomeCliente1+": ");
+        System.out.print("Qual a idade do " + nomeCliente1 + ": ");
         idadeCliente1 = leia.nextInt();
-        
-        System.out.println("Qual o nome do segundo Cliente: ");
+        leia.nextLine();  // Consome o caractere de nova linha
+        //Quando você usa leia.nextInt();, ele lê apenas o número, mas não lê o "Enter" que você pressiona ao final da entrada. Esse "Enter" é um caractere especial chamado nova linha (\n). Esse caractere fica "sobrando" no buffer de entrada e, quando você chama leia.nextLine();, ele acaba lendo esse "Enter" ao invés de esperar pela próxima entrada do usuário.
+       
+
+        System.out.print("Qual o nome do segundo Cliente: ");
         nomeCliente2 = leia.nextLine();
-        System.out.println("Qual a idade do "+nomeCliente2+": ");
+        System.out.print("Qual a idade do " + nomeCliente2 + ": ");
         idadeCliente2 = leia.nextInt();
         
-        if(idadeCliente1 < idadeCliente2){
-            System.out.println("Quarto A:"+nomeCliente1);
-            System.out.println("Quarto b:"+nomeCliente2);
+        System.out.println("--------------------------------");
+        
+        if(idadeCliente1 > idadeCliente2 && idadeCliente1 >=60){
+            System.out.println("Quarto A: "+nomeCliente1+" com desconto de 40%");
+            System.out.println("Quarto b: "+nomeCliente2);
+        } else if(idadeCliente1 < idadeCliente2 && idadeCliente2 >=60){
+            System.out.println("Quarto A: "+nomeCliente2+" com desconto de 40%");
+            System.out.println("Quarto b: "+nomeCliente1);
+        } else if(idadeCliente1 > idadeCliente2){
+            System.out.println("Quarto A: "+nomeCliente1);
+            System.out.println("Quarto b: "+nomeCliente2);
+        }else if(idadeCliente1 < idadeCliente2){
+            System.out.println("Quarto A: "+nomeCliente2);
+            System.out.println("Quarto b: "+nomeCliente1);
         }
     }
 }
