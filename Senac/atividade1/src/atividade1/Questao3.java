@@ -38,11 +38,11 @@ public class Questao3 {
                 if(idadeHospede > 4 && idadeHospede < 80){
                     valorHospedePagar+=100;
                 }else if(idadeHospede >= 80){
-                    valorHospedePagarMeia+=1;
+                    valorHospedePagarMeia++;
                     valorHospedePagar+=50;
                     System.out.println(nomeHospede+" paga meia");
                 }else{
-                    valorHospedeNaoPagar+=1;
+                    valorHospedeNaoPagar++;
                     System.out.println(nomeHospede+" possui gratuidade");
                 }
             }
