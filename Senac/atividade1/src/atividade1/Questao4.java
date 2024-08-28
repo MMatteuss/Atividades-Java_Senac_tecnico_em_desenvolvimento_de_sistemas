@@ -14,7 +14,7 @@ public class Questao4 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Scanner leia = new Scanner(System.in);
+        Scanner leia = new Scanner(System.in, "UTF-8");
         int escolha=0;
         int numeroDeCadastros=0;
         String[] nomesHospedes = new String[16];
@@ -33,10 +33,10 @@ public class Questao4 {
                 // Caso 1 (cadastrar)
                 case 1:
                     if(numeroDeCadastros<16){
-                        System.out.print("Digite o nome do hospede para o indice "+numeroDeCadastros+": ");
+                        System.out.print("Digite o nome do hospede para o cadastrado: ");
                         nomesHospedes[numeroDeCadastros] = leia.nextLine();
                     } else{
-                        System.out.println("Máximo de hospede atingido!");
+                        System.out.println("Maximo de hospede atingido!");
                     }
                     numeroDeCadastros++;
                 break;
@@ -64,7 +64,8 @@ public class Questao4 {
 
                 // Caso seja numero indesejado
                 default:
-                    System.out.println("Ops! Ocorreu um erro, Digite 1- cadastrar; 2- pesquisar; 3- sair");
+                    System.out.println("Ops! Ocorreu um erro!");
+                    System.out.println("Digite 1- cadastrar; 2- pesquisar; 3- sair");
                     escolha = leia.nextInt();
                     leia.nextLine();
                 break;

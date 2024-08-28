@@ -16,25 +16,20 @@ public class Questao2 {
      * @param args the command line arguments
      */
     public static void main(String[] args){
-        Scanner leia = new Scanner(System.in);
-        
-        String nomeCliente1;
-        String nomeCliente2;
-        int idadeCliente1;
-        int idadeCliente2;
+        Scanner leia = new Scanner(System.in, "UTF-8");
         
         System.out.print("Qual o nome do primeiro Cliente: ");
-        nomeCliente1 = leia.nextLine();
+        final String nomeCliente1 = leia.nextLine();
         System.out.print("Qual a idade do " + nomeCliente1 + ": ");
-        idadeCliente1 = leia.nextInt();
+        int idadeCliente1 = leia.nextInt();
         leia.nextLine();  // Consome o caractere de nova linha
         //Quando você usa leia.nextInt();, ele lê apenas o número, mas não lê o "Enter" que você pressiona ao final da entrada. Esse "Enter" é um caractere especial chamado nova linha (\n). Esse caractere fica "sobrando" no buffer de entrada e, quando você chama leia.nextLine();, ele acaba lendo esse "Enter" ao invés de esperar pela próxima entrada do usuário.
        
 
         System.out.print("Qual o nome do segundo Cliente: ");
-        nomeCliente2 = leia.nextLine();
+        final String nomeCliente2 = leia.nextLine();
         System.out.print("Qual a idade do " + nomeCliente2 + ": ");
-        idadeCliente2 = leia.nextInt();
+        int idadeCliente2 = leia.nextInt();
         
         System.out.println("--------------------------------");
         

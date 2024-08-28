@@ -14,8 +14,7 @@ public class Questao3 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Scanner leia = new Scanner(System.in);
-        String continuar = "CONTINUAR";
+        Scanner leia = new Scanner(System.in, "UTF-8");
         String nomeHospede;
         int idadeHospede;
         int valorHospedePagar = 0;
