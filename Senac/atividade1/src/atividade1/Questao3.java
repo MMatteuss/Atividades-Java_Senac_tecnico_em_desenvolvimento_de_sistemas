@@ -10,7 +10,12 @@ public class Questao3 {
         int valorHospedePagar = 0;
         int valorHospedePagarMeia=0;
         int valorHospedeNaoPagar =0;
-        byte para = 0;
+        int valorDiaria =0;
+        byte para =0;
+        
+        System.out.println("Informe o valor da diaria: ");
+        valorDiaria = leia.nextInt();
+        leia.nextLine();
         
         while(para == 0){
             // Interação com o usuario (ok)
@@ -24,8 +29,8 @@ public class Questao3 {
                 leia.nextLine();
                 
                 // Estrutura IFs (ok)
-                if(idadeHospede > 4 && idadeHospede < 80){
-                    valorHospedePagar+=100;
+                if(idadeHospede>4 && idadeHospede<80){
+                    valorHospedePagar+=valorDiaria;
                 }else if(idadeHospede >= 80){
                     valorHospedePagarMeia++;
                     valorHospedePagar+=50;
