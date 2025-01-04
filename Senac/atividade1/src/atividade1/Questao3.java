@@ -33,7 +33,7 @@ public class Questao3 {
                     valorHospedePagar+=valorDiaria;
                 }else if(idadeHospede >= 80){
                     valorHospedePagarMeia++;
-                    valorHospedePagar+=50;
+                    valorHospedePagar+=valorDiaria/2;
                     System.out.println(nomeHospede+" paga meia");
                 }else{
                     valorHospedeNaoPagar++;
